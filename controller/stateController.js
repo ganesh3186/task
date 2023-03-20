@@ -15,7 +15,7 @@ const createPosts=async (req,res)=>{
 const getPosts=async(req,res)=>{
   try{
     if(""==req.body['ID1']){
-    let data=await State.find()
+    const data=await State.find()
     console.log(data)
    return data = res.status(200).send({
               ResponseCode: 0,
