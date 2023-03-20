@@ -10,6 +10,7 @@ const MobileOpt=require("./controller/MobileOptController")
 const router = express.Router();
 
 router.get("/state", State.getPosts);
+
 // router.post("/dist", Dist.createPosts);
 // router.post("/taluka", Taluka.createPosts);
 // router.post("/village", Village.createPosts);
