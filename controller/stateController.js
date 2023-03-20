@@ -14,7 +14,7 @@ const createPosts=async (req,res)=>{
 }
 const getPosts=async(req,res)=>{
   try{
-    if(""==req.body['ID1']){
+    
     let data=await State.find()
     console.log(data)
    return data = res.status(200).send({
@@ -24,7 +24,7 @@ const getPosts=async(req,res)=>{
               Static_Opt: null,
               Data: data,
               Data1: [{ Coloumn1: 1 }],
-            });}
+            });
             
   } catch {
     res.status(400).send({ err: "Something went wrong" });
